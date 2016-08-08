@@ -73,7 +73,7 @@ hr {
   padding: 50px;
   position: relative;
   text-align: center;
-  margin-bottom: 92px;
+
 }
 
 #about .section-title, #plan .section-title {
@@ -166,26 +166,51 @@ hr {
 .custom-navbar {
     background: #000000;
     border: none;
-    margin-bottom: 0;
     text-align: center;
+	
 }
 
-.custom-navbar .navbar-brand  {
-  border: 4px solid red;
-  color: red;
+.center_element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;   /* half of the height of the header */
+    margin-left: -150px; /* half of the width of the header*/
+	padding: 2px;
+}	
+
+.navbar-brand11 {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  border: 2px solid white;
+  color: white;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
+  display: inline;
+  padding:10px;
+   /* no height needed ... image will resize automagically */
+}
+
+
+
+.custom-navbar .navbar-brand  {
+  border: 3.5px solid white;
+  color: white;
+  font-weight: 60]0;
+  font-size: 22px;
   padding-top: 11px;
 }
 
 .custom-navbar .navbar-brand .navbar-toggle {
     background: gold;
-     padding: 4px 6px;
+     ;
     font-size: 16px;
     color: #fff;
 }
 
 .custom-navbar .nav li {
+	
   
 }    
 
@@ -209,38 +234,66 @@ hr {
 }
 
 .custom-navbar .nav li.active > a {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .custom-navbar .navbar-toggle {
     border: none;
 }
 .custom-navbar .navbar-toggle .icon-bar {
-    background: gold;
+    background: 	#F08080;
     border-color: transparent;
 }
 
+
+
 @media(min-width:768px) {
+	
+	
+	
 
     .custom-navbar {
-         border-bottom: 1px solid rgba(250,250,250,0.3);
-        padding: 16px;
+
+       border-bottom: 1px solid rgba(250,250,250,0.3);
+	   padding: 20px;
        background: 0 0;
     }
+	
+	
 
     .custom-navbar.top-nav-collapse {
-       padding: 16px;
-      background: #000000;
-      border-bottom: 0;
+		color: #000000;
+		padding: 20px;
+		background: #000000;
+		border-bottom: 0;
+	  
     }
+	
+	
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
    .custom-navbar .nav li.active > a {
         border-bottom: 2px solid transparent !important;
-        color: orangered;
+        color: gold;
+		
     }
+	
+	
+    .custom-navbar {
+         border-bottom: 1px solid rgba(250,250,250,0.3);
+        padding: 20px;
+      ;
+    }
+	
+	.logo {
+        display: none;
+    }
+	.img{
+		display: none;
+	}
+	
 
 }
 
@@ -365,6 +418,8 @@ hr {
   font-size: 16px;
 }
 
+
+
 #work .col-md-4 hr {
   margin-left: 0;
 }
@@ -465,6 +520,8 @@ hr {
 #projects .col-md-4 {
   padding: 12px;
 }
+
+
 
 .grid {
   position: relative;
@@ -578,6 +635,11 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   padding-top: 62px;
   position: relative;
   clear: both;
+}
+
+
+div:focus {
+    background-color:red;
 }
 
 #portfolio .portfolio-bottom h2  {
@@ -873,29 +935,6 @@ html * {
   box-sizing: border-box;
 }
 
-/*
-body {
-  font-size: 100%;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
-}
-
-a {
-  color: #acb7c0;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-*/
 
 /* -------------------------------- 
 
